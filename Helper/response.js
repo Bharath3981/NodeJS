@@ -14,3 +14,17 @@ export const getNotFoundResponse = (response) => {
     error: ['Request data not found'],
   });
 };
+
+export const getResponse = (
+  response,
+  status,
+  statusText,
+  successData,
+  errorData
+) => {
+  return response.status(status).json({
+    status: statusText,
+    data: successData,
+    error: errorData,
+  });
+};
