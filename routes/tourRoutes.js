@@ -1,9 +1,5 @@
 import express from 'express';
-import {
-  addTour,
-  getTour,
-  getTours,
-} from '../controllers/tourController.js123';
+import { addTour, getTour, getTours } from '../controllers/tourController.js';
 
 const tourRouter = express.Router();
 
