@@ -9,7 +9,6 @@ export const app = express();
 app.use(morgan('dev'));
 app.use(express.json());
 app.use((req, res, next) => {
-  console.log('Hello form the middleware');
   req.requestTime = new Date().toISOString();
   next();
 });

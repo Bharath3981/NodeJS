@@ -11,7 +11,15 @@ export const getNotFoundResponse = (response) => {
   return response.status(404).json({
     status: 'error',
     data: {},
-    error: ['Request data not found'],
+    error: ['Requested data not found'],
+  });
+};
+
+export const getBadResponse = (response) => {
+  return response.status(400).json({
+    status: 'fail',
+    data: {},
+    error: ['Please check payload(Body)'],
   });
 };
 
