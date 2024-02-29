@@ -2,8 +2,6 @@ import express from 'express';
 import morgan from 'morgan';
 import tourRouter from './routes/tourRoutes.js';
 import userRouter from './routes/userRoutes.js';
-import { config } from 'dotenv';
-config({ path: './config.env' });
 
 export const app = express();
 console.log(process.env.NODE_ENV);
